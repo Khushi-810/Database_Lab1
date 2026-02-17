@@ -40,9 +40,7 @@ File: `dml.sql`
 
 Queries are compatible with:
 
-- MySQL
-- PostgreSQL
-- Most SQL-compliant databases
+- Oracle SQL Plus
 
 Minor syntax adjustments may be required depending on DBMS.
 
