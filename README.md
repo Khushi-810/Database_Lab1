@@ -19,7 +19,7 @@ Includes queries for:
 - Renaming columns
 - Dropping tables
 
-File: `ddl.sql`
+File: `Solutions_Part_A.sql`
 
 ---
 
@@ -32,7 +32,7 @@ Includes queries for:
 - Update operations
 - Delete operations
 
-File: `dml.sql`
+File: `Solutions_Part_B.sql`
 
 ---
 
@@ -49,8 +49,8 @@ Minor syntax adjustments may be required depending on DBMS.
 ## 🚀 How to Run
 
 1. Open your SQL client (MySQL Workbench / pgAdmin / etc.)
-2. Execute `ddl.sql`
-3. Execute `dml.sql`
+2. Execute `Solutions_Part_A.sql`
+3. Execute `Solutions_Part_B.sql`
 
 ---
 
