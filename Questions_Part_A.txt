@@ -1,0 +1,28 @@
+Part A:
+DDL (Structure / Table Creation) 
+
+1. Create a database named CollegeDB. 
+
+2. Select / use the database CollegeDB. 
+
+3. Create a table Student with following columns: 
+
+○ RollNo INT 
+○ Name VARCHAR(50) 
+○ Dept VARCHAR(20) 
+○ Age INT 
+○ Phone VARCHAR(15) 
+
+4. Create a table Course with columns: 
+
+○ CourseID INT 
+○ CourseName VARCHAR(50) 
+○ Credits INT 
+
+5. Add a new column City in table Student.
+
+6. Add a new column Semester in table Student. 
+
+7. Rename column Phone to MobileNo in table Student. (if supported in your DB) 
+
+8. Delete (drop) the table Course.
