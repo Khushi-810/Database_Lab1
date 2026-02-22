@@ -165,7 +165,7 @@ Includes:
 ✔ Composite Keys
 
 📎 **SQL File:**
-`/schema.sql`
+`Lab2_Solutions_Part_C.sql`
 
 ---
 
@@ -201,6 +201,3 @@ This repository contains:
 **Khushi Kumari**
 B.Tech – Computer Science & Engineering
 
-
-
-Just tell me.
