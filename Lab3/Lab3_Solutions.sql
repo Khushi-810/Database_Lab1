@@ -3,10 +3,6 @@ SQL> CREATE TABLE Department(
   3  Dept_Name VARCHAR(100) NOT NULL,
   4  Office_Location VARCHAR(100));
 CREATE TABLE Department(
-             *
-ERROR at line 1:
-ORA-00955: name is already used by an existing object
-
 
 SQL> SELECT * FROM Department;
 
