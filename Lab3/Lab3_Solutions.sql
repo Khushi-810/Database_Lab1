@@ -51,7 +51,7 @@ SQL> SELECT * FROM Faculty;
 SQL> INSERT INTO Faculty VALUES (101,'Dr M P Singh','Professor','mp.singh@bpmce.ac.in',1);
 1 row created.
 
-SQL> INSERT INTO Faculty VALUES (102,'Mithilesh Kumar','Professor','mithilesh.kumar@bpmce.ac.in',2);
+SQL> INSERT INTO Faculty VALUES (102,'Mithilesh Kumar','Assistant Professor','mithilesh.kumar@bpmce.ac.in',2);
 1 row created.
 
 SQL> INSERT INTO Faculty VALUES (103,'Dr Ajay Giri','Professor','ajay.giri@bpmce.ac.in',3);
@@ -63,7 +63,7 @@ SQL> INSERT INTO Faculty VALUES (104,'Prof Ashish Kumar Suman','Professor','ashi
 SQL> INSERT INTO Faculty VALUES (105,'Vicky Anand','Professor','vicky.anand@bpmce.ac.in',5);
 1 row created.
 
-SQL> INSERT INTO Faculty VALUES (106,'Dr Ajay Kumar','Professor','dr.ajay.kumar@bpmce.ac.in',6);
+SQL> INSERT INTO Faculty VALUES (106,'Dr Ajay Kumar','Assistant Professor','dr.ajay.kumar@bpmce.ac.in',6);
 1 row created.
 
 SQL> INSERT INTO Faculty VALUES (107,'Dr Prity Kumari Choudhary','Professor','dr.priti.kumari@bpmce.ac.in',7);
