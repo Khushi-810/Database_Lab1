@@ -16,7 +16,7 @@ CREATE TABLE Student (
 
 CREATE TABLE Faculty (
     faculty_id INT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
+    faculty_Name VARCHAR(100) NOT NULL,
     designation VARCHAR(100),
     email VARCHAR(100) UNIQUE,
     department_id INT,
