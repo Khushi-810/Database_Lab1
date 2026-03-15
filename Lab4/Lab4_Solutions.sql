@@ -4,54 +4,53 @@
 
 sql
 SELECT 
-StudentID AS Roll_No,
-Name AS Student_Name,
-Gender AS Gender,
-DateOfBir AS DOB,
-ContactNumber AS Contact_No,
-DepartmentID AS Dept_ID
+student_id AS Roll_No,
+name AS Student_Name,
+date_of_birth AS DOB,
+gender AS Gender,
+contact_number AS Contact_No,
+department_id AS Dept_ID
 FROM Student;
 
 # 2 Display StudentID, Name, DepartmentID with new names
 
 sql
 SELECT 
-StudentID AS Roll_No,
-Name AS Student_Name,
-DepartmentID AS Dept_ID
+student_id AS Roll_No,
+name AS Student_Name,
+department_id AS Dept_ID
 FROM Student;
 
 # 3 Display Faculty table with readable names
 
   sql
 SELECT 
-FacultyID AS Faculty_ID,
-Name AS Faculty_Name,
-Designation AS Designation,
-Email AS Email_Address,
-DepartmentID AS Dept_ID
+faculty_id AS Faculty_ID,
+faculty_Name AS Faculty_Name,
+designation AS Designation,
+email AS Email_Address,
+department_id AS Dept_ID
 FROM Faculty;
 
 # 4 Display Course table with renamed headers
 
 sql
 SELECT 
-CourseID AS Course_ID,
-CourseName AS Course_Name,
-Credits AS Course_Credits,
-DepartmentID AS Dept_ID,
-FacultyID AS Faculty_ID
+course_id AS Course_ID,
+course_name AS Course_Name,
+credits AS Course_Credits,
+department_id AS Dept_ID,
+faculty_id AS Faculty_ID
 FROM Course;
 
 # 5 Display Enrollment table with aliases
 
 sql
 SELECT 
-EnrollmentID AS Enrollment_ID,
-StudentID AS Student_ID,
-CourseID AS Course_ID,
-Semester AS Semester,
-Grade AS Grade
+student_id AS Student_ID,
+course_id AS Course_ID,
+semester AS Semester,
+grade AS Grade
 FROM Enrollment;
 
 # Part B — Conditional Data Display (WHERE)
@@ -61,82 +60,81 @@ FROM Enrollment;
 sql
 SELECT *
 FROM Student
-WHERE DepartmentID = 1;
+WHERE department_id = 1;
 
 # 7 Female students
 
   sql
 SELECT *
 FROM Student
-WHERE Gender = 'Female';
+WHERE gender = 'Female';
 
 # 8 Faculty with designation Assistant Professor
 
 sql
 SELECT *
 FROM Faculty
-WHERE Designation = 'Assistant Professor';
+WHERE designation = 'Assistant Professor';
 
 # 9 Faculty in Department 2
 
 sql
 SELECT *
 FROM Faculty
-WHERE DepartmentID = 2;
+WHERE department_id = 2;
 
 # 10 Courses with Credits ≥ 4
 
   sql
 SELECT *
 FROM Course
-WHERE Credits >= 4;
+WHERE credits >= 4;
 
 # 11 Students born after 01-JAN-2003
 
   sql
 SELECT *
 FROM Student
-WHERE DateOfBir > DATE '2003-01-01';
+WHERE date_of_birth > DATE '2003-01-01';
 
 # 12 Students enrolled in Semester 4
 
 sql
 SELECT *
 FROM Enrollment
-WHERE Semester = 'Sem-4';
+WHERE semester = 'Sem-4';
 
-# Part C — Sorting and Limitin
-  # 13 Students sorted by Name ASC
+# Part C — Sorting and Limiting
+  
+# 13 Students sorted by Name ASC
 
 sql
 SELECT *
 FROM Student
-ORDER BY Name ASC;
+ORDER BY name ASC;
 
 # 14 Students sorted by DOB DESC
 
 sql
 SELECT *
 FROM Student
-ORDER BY DateOfBir DESC;
+ORDER BY date_of_birth DESC;
 
 # 15 Faculty sorted by Designation
 
   sql
 SELECT *
 FROM Faculty
-ORDER BY Designation ASC;
+ORDER BY designation ASC;
 
 # 16 Courses sorted by Credits DESC
 
   sql
 SELECT *
 FROM Course
-ORDER BY Credits DESC;
+ORDER BY credits DESC;
 
 # 17 First 3 students
-
-(SQL*Plus / Oracle syntax)
 
   sql
 SELECT *
@@ -156,42 +154,41 @@ WHERE ROWNUM <= 5;
 
   sql
 SELECT 
-Name,
-TRUNC(MONTHS_BETWEEN(SYSDATE, DateOfBir)/12) AS Age
+name,
+TRUNC(MONTHS_BETWEEN(SYSDATE, date_of_birth)/12) AS Age
 FROM Student;
 
 # 20 CourseName with Credits + 1
 sql
 SELECT 
-CourseName,
-Credits + 1 AS Updated_Credits
+course_name,
+credits + 1 AS Updated_Credits
 FROM Course;
 
 # 21 Enrollment with Final_Grade column
 
 sql
 SELECT 
-EnrollmentID,
-StudentID,
-CourseID,
-Semester,
-Grade AS Final_Grade
+student_id,
+course_id,
+semester,
+grade AS Final_Grade
 FROM Enrollment;
 
 # 22 Student name with Birth Year
 
 sql
 SELECT 
-Name,
-EXTRACT(YEAR FROM DateOfBir) AS Birth_Year
+name,
+EXTRACT(YEAR FROM date_of_birth) AS Birth_Year
 FROM Student;
 
 # 23 Faculty name with Email Domain
 
   sql
 SELECT 
-Name,
-SUBSTR(Email, INSTR(Email,'@')+1) AS Email_Domain
+faculty_Name,
+SUBSTR(email, INSTR(email,'@')+1) AS Email_Domain
 FROM Faculty;
 
 
