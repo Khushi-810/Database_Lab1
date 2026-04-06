@@ -25,7 +25,6 @@ SELECT MIN(credits) AS MIN_CREDITS
 FROM Course;
 
 # 6. Number of students in each department
-PROMPT =====================================
 
 SELECT department_id, COUNT(*) AS TOTAL_STUDENTS
 FROM Student
